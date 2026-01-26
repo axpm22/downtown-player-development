@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Downtown Player Development</title>
+    <meta
+      name="description"
+      content="Expert, intentional soccer training for young players in Downtown NYC."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand" role="button" tabindex="0" data-route="home" aria-label="Go to Home">
+          <img class="brand-logo" src="./assets/JustLogo.png" alt="Downtown Player Development logo" />
+          <div class="brand-text">
+            <div class="brand-name">Downtown Player Development</div>
+            <div class="brand-subtitle">Downtown NYC • Youth Soccer Training</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav-btn" data-route="home" type="button">Home</button>
+          <button class="nav-btn" data-route="about" type="button">About</button>
+          <button class="nav-btn" data-route="programs" type="button">Programs</button>
+          <button class="nav-btn" data-route="coaches" type="button">Coaches</button>
+          <button class="nav-btn nav-cta" data-route="contact" type="button">Book</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <!-- HOME -->
+      <section class="page" data-page="home">
+        <div class="hero">
+          <div class="hero-left">
+            <h1>Downtown Player Development</h1>
+            <p class="lead">
+              We provide expert, intentional soccer training for young players in Downtown NYC, led by ECNL, MLS NEXT,
+              and college-level athletes, designed to build confidence, skill, and a lifelong love for the game.
+            </p>
+
+            <div class="cta-row">
+              <button class="primary" data-route="about" type="button">Learn More</button>
+              <button class="secondary" data-route="programs" type="button">View Programs</button>
+            </div>
+
+            <ul class="highlights" aria-label="Highlights">
+              <li><span class="dot"></span> Small groups • high reps</li>
+              <li><span class="dot"></span> Game-real decisions</li>
+              <li><span class="dot"></span> Confidence, skill, and love for the game</li>
+            </ul>
+          </div>
+
+          <div class="hero-right">
+            <img class="image hero-image" src="./assets/Hero.png" alt="Training photo placeholder" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="page" data-page="about" hidden>
+        <div class="page-head">
+          <h2>About Us</h2>
+          <p class="muted">Purposeful sessions that translate to game day.</p>
+        </div>
+
+        <div class="quote-center">
+          <blockquote class="big-quote">
+            “Practice isn’t the thing you do once you’re good. It’s the thing you do that makes you good.”
+          </blockquote>
+        </div>
+
+        <div class="two-col">
+          <div class="feature">
+            <h3>Individual Development</h3>
+            <p>
+              Many club programs focus on team results rather than individual player development. Our collegiate level
+              trainers provide proven position-specific drills, skill-focused exercises, and personalized guidance so
+              each player will train effectively and efficiently.
+            </p>
+          </div>
+
+          <div class="feature">
+            <h3>Game IQ &amp; Awareness</h3>
+            <p>
+              Players improve tactical understanding, decision-making, and field awareness with exercises designed to
+              challenge their soccer intelligence at every session.
+            </p>
+          </div>
+        </div>
+
+        <div class="bottom-callout" role="note" aria-label="Downtown Soccer quote">
+          <div class="bottom-callout-inner">
+            Train where the city moves fast—train at Downtown Soccer. Players sharpen skills, compete hard, and get
+            better in every session.
+          </div>
+        </div>
+
+        <div class="two-col media" style="margin-top: 16px;">
+          <img class="image" src="./assets/About1.png" alt="About image placeholder 1" />
+          <img class="image" src="./assets/About2.png" alt="About image placeholder 2" />
+        </div>
+      </section>
+
+      <!-- PROGRAMS -->
+      <section class="page" data-page="programs" hidden>
+        <div class="page-head">
+          <h2>Programs</h2>
+          <p class="muted">Pick what fits your player’s age and goals.</p>
+        </div>
+
+        <div class="programs">
+          <article class="program-row">
+            <div class="program-text">
+              <h3>Foundation Training <span class="age">(Ages 5–9)</span></h3>
+              <p>
+                Designed for younger players learning the game, these sessions focus on ball comfort, coordination,
+                confidence, and enjoyment. Training emphasizes simple, repeatable movements, creativity on the ball, and
+                building a strong technical base in a fun but structured environment.
+              </p>
+            </div>
+            <img class="image small" src="./assets/Foundation.png" alt="Foundation training placeholder image" />
+          </article>
+
+          <article class="program-row">
+            <div class="program-text">
+              <h3>Youth Training <span class="age">(Ages 9–15)</span></h3>
+              <p>
+                Position-specific training built to help players refine technique, improve decision-making, and gain
+                confidence in match situations. Sessions focus on ball mastery, passing, receiving, finishing, and
+                understanding the game at a higher level.
+              </p>
+            </div>
+            <img class="image small" src="./assets/Youth.png" alt="Youth training placeholder image" />
+          </article>
+
+          <article class="program-row">
+            <div class="program-text">
+              <h3>Small Group Training</h3>
+              <p>
+                Small group sessions create a competitive but focused environment where players train at high intensity
+                while still receiving individual feedback. Ideal for players looking to sharpen skills, speed of play,
+                and game awareness.
+              </p>
+            </div>
+            <img class="image small" src="./assets/SmallGroup.png" alt="Small group training placeholder image" />
+          </article>
+
+          <article class="program-row">
+            <div class="program-text">
+              <h3>Private Training</h3>
+              <p>
+                One-on-one sessions tailored to a player’s position, strengths, and development goals. Private training
+                is best for accelerating progress, addressing specific weaknesses, or preparing for club, school, or
+                college competition.
+              </p>
+            </div>
+            <img class="image small" src="./assets/Private.png" alt="Private training placeholder image" />
+          </article>
+        </div>
+
+        <div class="inline-cta">
+          <div>
+            <div class="inline-cta-title">Ready to book?</div>
+            <div class="muted">Message Instagram or call/text. We respond within 24 hours.</div>
+          </div>
+          <button class="primary" data-route="contact" type="button">Book</button>
+        </div>
+      </section>
+
+      <!-- COACHES -->
+      <section class="page" data-page="coaches" hidden>
+        <div class="page-head">
+          <h2>Coaches</h2>
+          <p class="muted">Meet the athletes leading Downtown Player Development.</p>
+        </div>
+<div class="coach-stack" aria-label="Coach cards">
+          <article class="coach-card">
+            <div class="coach-left">
+              <div class="coach-name">Sobha Magon</div>
+              <div class="coach-level">ECNL Player | NCAA D3 Athlete</div>
+              <p class="coach-bio">
+                Sobha is a senior at the High School for Math, Science, and Engineering and will attend Oberlin College
+                next fall to play NCAA Division III soccer. He competes with Manhattan SC in ECNL and has coached in the
+                Downtown Soccer League for 4 years with players aged 5-15.
+              </p>
+            </div>
+            <div class="coach-right">
+              <img class="image coach-photo" src="./assets/Sobha.png" alt="Sobha Magon photo placeholder" />
+            </div>
+          </article>
+
+          <article class="coach-card">
+            <div class="coach-left">
+              <div class="coach-name">Connor O’Neill</div>
+              <div class="coach-level">MLS NEXT Player | NCAA D3 Athlete</div>
+              <p class="coach-bio">
+                Connor is a senior at Xavier High School and will attend Gettysburg College to play NCAA D3 soccer. He
+                competes with Cedar Stars Academy Bergen in MLS NEXT and brings years of experience competing at the
+                highest youth levels.
+              </p>
+            </div>
+            <div class="coach-right">
+              <img class="image coach-photo" src="./assets/Connor.png" alt="Connor O’Neill photo placeholder" />
+            </div>
+          </article>
+
+          <article class="coach-card">
+            <div class="coach-left">
+              <div class="coach-name">Noam Alster</div>
+              <div class="coach-level">ECNL Player</div>
+              <p class="coach-bio">
+                Noam competes with Brooklyn United on their ECNL Regional League team and previously played with BW
+                Gottschee and DUSC. He has experience running private sessions and is currently an assistant coach at
+                FFA, helping players improve efficiently.
+              </p>
+            </div>
+            <div class="coach-right">
+              <img class="image coach-photo" src="./assets/Noam.png" alt="Noam Alster photo placeholder" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT / BOOK -->
+      <section class="page" data-page="contact" hidden>
+        <div class="page-head">
+          <h2>Book / Contact</h2>
+          <p class="muted">
+            Wanna book a session or have a question? Reach out directly — we’re happy to help.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-big">
+            <div class="contact-big-title">Book a session</div>
+            <div class="contact-big-sub muted">Fastest way: Instagram DM. Otherwise call/text.</div>
+
+            <div class="contact-actions">
+              <a class="contact-action" href="https://instagram.com/downtownplayerdevelopment" target="_blank" rel="noopener noreferrer" aria-label="Instagram link placeholder">
+                <div class="contact-action-title">Instagram DM</div>
+                <div class="contact-action-meta">Instagram: <span class="mono">@downtownplayerdevelopment</span></div>
+              </a>
+
+              <a class="contact-action" href="tel:+19295228108">
+                <div class="contact-action-title">Text / Call</div>
+                <div class="contact-action-meta">Phone: <span class="mono">(929) 522-8108</span></div>
+              </a>
+            </div>
+
+            <div class="contact-footer muted">
+              We respond within 24 hours and look forward to working with you.
+            </div>
+          </div>
+
+          <div class="contact-side">
+            <img class="image tall" src="./assets/Contact.png" alt="Contact image placeholder" />
+            <div class="mini-note">
+              <div class="mini-note-title">Parents:</div>
+              <div class="mini-note-text muted">
+                When you message, include your player’s age, experience level, and preferred days/times.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="muted">
+          © <span id="year"></span> Downtown Player Development • Downtown NYC
+        </div>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
