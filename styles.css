@@ -368,3 +368,86 @@ button,a{font:inherit; color:inherit}
   .contact-layout{grid-template-columns:1fr;}
   .hero-image{min-height: 260px;}
 }
+
+}
+
+/* Home: logo under highlights */
+.home-logo-row{
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.home-logo-row img{
+  width: 150px;
+  max-width: 40vw;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(15,18,24,0.06);
+}
+@media (max-width: 860px){
+  .home-logo-row img{ width: 120px; }
+}
+
+
+/* Mobile nav */
+.menu-toggle{
+  display:none;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,0.92);
+  padding:10px 12px;
+  border-radius:12px;
+  cursor:pointer;
+  font-size: 15px;
+  font-weight: 760;
+}
+.nav-links{display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end;}
+
+/* Better mobile top bar */
+@media (max-width: 860px){
+  .header-inner{
+    padding: 10px 0;
+  }
+
+  .brand-name{font-size:16px;}
+  .brand-subtitle{font-size:12px;}
+
+  .nav{
+    position: relative;
+    gap: 10px;
+  }
+
+  .menu-toggle{display:inline-flex;}
+
+  /* hide link buttons until menu opens */
+  .nav-links{
+    display:none;
+    position:absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.96);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 18px 40px rgba(15,18,24,0.10);
+    backdrop-filter: blur(10px);
+  }
+
+  .nav.is-open .nav-links{display:grid; gap:8px;}
+
+  .nav-links .nav-btn{
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 12px 12px;
+    border-radius: 14px;
+  }
+}
