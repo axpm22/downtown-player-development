@@ -369,26 +369,50 @@ button,a{font:inherit; color:inherit}
   .hero-image{min-height: 260px;}
 }
 
+
+/* Home hero splash (Hero.png) */
+.hero-splash{
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: #fff;
+  margin-top: 10px;
 }
 
-/* Home: logo under highlights */
-.home-logo-row{
-  margin-top: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 12px;
-}
-.home-logo-row img{
-  width: 150px;
-  max-width: 40vw;
-  height: auto;
+.hero-splash-img{
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
   display: block;
-  border-radius: 10px;
-  border: 1px solid var(--line);
-  background: #fff;
-  box-shadow: 0 10px 24px rgba(15,18,24,0.06);
 }
+
+/* readable overlay */
+.hero-splash-content{
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  padding: 18px 18px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.88);
+  border: 1px solid rgba(31,122,58,0.20);
+  backdrop-filter: blur(10px);
+}
+
+.hero-splash-content h1{
+  margin: 0 0 10px;
+  font-size: clamp(38px, 4.2vw, 62px);
+  letter-spacing: -1px;
+  line-height: 1.05;
+}
+
 @media (max-width: 860px){
-  .home-logo-row img{ width: 120px; }
+  .hero-splash-img{ height: 420px; }
+  .hero-splash-content{ left: 12px; right: 12px; bottom: 12px; padding: 14px; }
 }
+
+
+
+
