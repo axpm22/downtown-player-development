@@ -376,3 +376,56 @@ button,a{font:inherit; color:inherit}
 
 
 
+
+
+/* Rates */
+.rates-card{
+  margin-top: 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+.rates-title{
+  font-weight: 900;
+  letter-spacing: -0.25px;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+.rates-sub{ font-size: 16px; margin-bottom: 12px; }
+
+.rates-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.rates-section{
+  border: 1px solid rgba(31,122,58,0.18);
+  background: rgba(31,122,58,0.04);
+  border-radius: 16px;
+  padding: 12px;
+}
+.rates-section-title{
+  font-weight: 850;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.rate-table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+.rate-table td{
+  padding: 10px 10px;
+  border-top: 1px solid rgba(31,122,58,0.16);
+}
+.rate-table tr:first-child td{ border-top: none; }
+.rate-left{ color: var(--text); font-weight: 700; }
+.rate-right{ color: var(--text); text-align: right; font-weight: 850; }
+.rates-note{ margin-top: 10px; font-size: 14px; }
+
+@media (max-width: 860px){
+  .rates-grid{ grid-template-columns: 1fr; }
+  .rate-right{ text-align: left; }
+}
